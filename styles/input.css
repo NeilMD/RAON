@@ -23,20 +23,20 @@
   }
 
   main {
-    @apply px-[130px];
+    @apply pl-[210px] pr-[130px];
   }
 
   section {
-    @apply min-h-dvh;
+    @apply min-h-dvh border-t;
   }
 }
 
 @layer components {
   .service-card {
-    @apply min-w-[1136px] border-b-2 border-b-white min-h-[195px];
+    @apply min-w-[1136px] border-b border-b-white min-h-[195px];
   }
 
   .project-card {
-    @apply min-w-[1136px] border-b-2 border-b-white min-h-[300px];
+    @apply w-full border-y border-y-white py-[65px] -mt-[1px];
   }
 }
