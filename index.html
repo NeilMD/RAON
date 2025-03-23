@@ -13,19 +13,21 @@
     />
     <link href="./styles/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-primary flex mx-auto flex-col items-center w-full ">
+  <body class="bg-primary flex flex-col mx-auto  items-center w-full  max-w-[1440px]">
     <div class="relative">
-      <header class="w-[120px]  sticky top-0 left-0 h-dvh border-r border-r-white ">
-
-      </header>
-      <main class="w-full flex flex-col">
+      <div class="sidebar w-[130px] sticky top-0 left-0 h-dvh border-r border-r-white z-10">
+        <div class="flex justify-center align-middle  text-amber-200 ">
+          <h5>w-[120px]</h5>
+        </div>
+      </div> 
+      <main class="w-full flex flex-col -mt-[100dvh]">
         <section id="hero" class="relative">
           <div class="absolute top-1/3 right-0 text-right mr-4">
             <h1 class="text-[240px] font-semibold leading-[0.7]">RAON</h1>
             <h3 class="text-9xl font-semibold text-zinc-600">we thrive</h3>
           </div>
         </section>
-
+  
         <section id="founder" class="relative">
           <div class="absolute top-0 max-w-[378px] right-0 text-[20px]">
             <span>
@@ -50,7 +52,7 @@
             Founder
           </h2>
         </section>
-
+  
         <section id="services" class="flex flex-col">
           <div class="service-card pt-[112px] min-h-[425px] relative">
             <div class="absolute max-w-[806px] right-0">
@@ -88,7 +90,7 @@
             </h3>
           </div>
         </section>
-
+  
         <section id="projects">
           <div class="pb-[70px] flex gap-x-[80px] pt-[112px]">
             <h3 class="uppercase font-arial-black text-[2rem] flex-2/10">
@@ -132,16 +134,17 @@
             </div>
           </div>
         </section>
-
-
+  
+  
         <section id="process" class="flex py-[70px]" >
           <h5 class="font-arial-black uppercase text-[3rem] flex-2/10 h-[811px] leading-[0.8] text-[3rem] ">HOW <br>
             WE WORK</h5>
             <img class="w-[811px] h-[811px] object-contain flex-8/10 absolute right-0 " src="./img/temp-vid.svg" >
         </section>
       </main>
-      
     </div>
-    <footer class="h-[686px]">asd</footer>
+   
+    
+    <footer class="h-[686px] text-amber-300 bg-amber-200">atestsd</footer>
   </body>
 </html>

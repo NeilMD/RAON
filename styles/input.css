@@ -23,11 +23,11 @@
   }
 
   main {
-    @apply pl-[210px] pr-[130px];
+    @apply ml-[210px] pr-[130px];
   }
 
   section {
-    @apply min-h-dvh border-t;
+    @apply min-h-dvh;
   }
 }
 

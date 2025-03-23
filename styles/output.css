@@ -5,6 +5,8 @@
     --font-sans: "Arial", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(0.924 0.12 95.746);
+    --color-amber-300: oklch(0.879 0.169 91.605);
     --color-zinc-600: oklch(0.442 0.017 285.786);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -209,8 +211,14 @@
   .-z-10 {
     z-index: calc(10 * -1);
   }
+  .z-10 {
+    z-index: 10;
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .-mt-\[100dvh\] {
+    margin-top: calc(100dvh * -1);
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -242,6 +250,9 @@
   .w-\[120px\] {
     width: 120px;
   }
+  .w-\[130px\] {
+    width: 130px;
+  }
   .w-\[180px\] {
     width: 180px;
   }
@@ -256,6 +267,9 @@
   }
   .max-w-\[806px\] {
     max-width: 806px;
+  }
+  .max-w-\[1440px\] {
+    max-width: 1440px;
   }
   .flex-2\/10 {
     flex: calc(2/10 * 100%);
@@ -285,6 +299,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .justify-end {
     justify-content: flex-end;
   }
@@ -297,6 +314,9 @@
   }
   .border-r-white {
     border-right-color: var(--color-white);
+  }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
   }
   .bg-primary {
     background-color: var(--color-primary);
@@ -324,6 +344,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .font-arial-black {
     font-family: var(--font-arial-black);
@@ -396,6 +419,12 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-amber-200 {
+    color: var(--color-amber-200);
+  }
+  .text-amber-300 {
+    color: var(--color-amber-300);
+  }
   .text-zinc-600 {
     color: var(--color-zinc-600);
   }
@@ -415,13 +444,11 @@
     font-family: var(--font-arial-black);
   }
   main {
+    margin-left: 210px;
     padding-right: 130px;
-    padding-left: 210px;
   }
   section {
     min-height: 100dvh;
-    border-top-style: var(--tw-border-style);
-    border-top-width: 1px;
   }
 }
 @layer components {
