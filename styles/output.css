@@ -6,6 +6,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-200: oklch(0.924 0.12 95.746);
+    --color-gray-500: oklch(0.551 0.027 264.364);
     --color-zinc-600: oklch(0.442 0.017 285.786);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -216,6 +217,9 @@
   .mx-\[122px\] {
     margin-inline: 122px;
   }
+  .mx-\[129px\] {
+    margin-inline: 129px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -230,6 +234,9 @@
   }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .inline {
     display: inline;
@@ -328,11 +335,23 @@
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .columns-3 {
+    columns: 3;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -351,6 +370,14 @@
   }
   .gap-y-8 {
     row-gap: calc(var(--spacing) * 8);
+  }
+  .divide-x-2 {
+    :where(& > :not(:last-child)) {
+      --tw-divide-x-reverse: 0;
+      border-inline-style: var(--tw-border-style);
+      border-inline-start-width: calc(2px * var(--tw-divide-x-reverse));
+      border-inline-end-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+    }
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -375,8 +402,14 @@
   .object-contain {
     object-fit: contain;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-\[45px\] {
     padding-inline: 45px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -490,6 +523,12 @@
   .text-amber-200 {
     color: var(--color-amber-200);
   }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
   .text-zinc-600 {
     color: var(--color-zinc-600);
   }
@@ -552,6 +591,11 @@
   initial-value: 0;
 }
 @property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-divide-x-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;
