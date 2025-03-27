@@ -40,3 +40,9 @@
     @apply w-full border-y border-y-white py-[65px] -mt-[1px];
   }
 }
+
+@layer utilities {
+  .footer-title {
+    font-size: clamp(1rem, 12vw, 170px);
+  }
+}
