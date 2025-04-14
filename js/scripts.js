@@ -1,14 +1,16 @@
 const { innerHeight } = window;
 
 gsap.to("#about_main", {
-  scale: 3,
-  stagger: 0.25,
-  left: 0,
-  duration: 3,
+  scale: 4,
+  y: "90%",
+  transform: "translate(-60%, -110%)",
+  y: "100vh",
   scrollTrigger: {
-    trigger: "#hero", // Start the animation when #hero enters the viewport
-    pin: true, // Pin the #hero section during the animation
-    end: `+=${innerHeight}`, // End the animation when the user has scrolled the height of the viewport
-    scrub: 3, // Sync animation with scroll position
+    trigger: "#hero",
+    start: "top top", // When the top of #hero hits top of viewport
+    end: "bottom top", // Until the bottom of #hero hits top of viewport
+    scrub: true, // Sync with scroll
+    // pin: false (default)
+    markers: false, // Optional: for debugging
   },
 });
