@@ -31,7 +31,7 @@
 
   span,
   li {
-    @apply font-inter;
+    @apply font-inter font-extralight;
   }
 
   section {
