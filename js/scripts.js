@@ -1,16 +1,39 @@
-const { innerHeight } = window;
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#about_main", {
-  scale: 4,
-  y: "90%",
-  transform: "translate(-60%, -110%)",
-  y: "100vh",
-  scrollTrigger: {
-    trigger: "#hero",
-    start: "top top", // When the top of #hero hits top of viewport
-    end: "bottom top", // Until the bottom of #hero hits top of viewport
-    scrub: true, // Sync with scroll
-    // pin: false (default)
-    markers: false, // Optional: for debugging
-  },
+window.addEventListener("load", () => {
+  const heroImg = document.getElementById("about_main");
+  const imgCon = document.getElementById("img-con");
+  const contactSection = document.getElementById("growth-sec");
+
+  // Get position of img-con relative to viewport
+  const bounds = imgCon.getBoundingClientRect();
+
+  // Convert to position relative to #contact section
+  const contactBounds = contactSection.getBoundingClientRect();
+
+  const fromX = bounds.left - contactBounds.left;
+  const fromY = bounds.top - contactBounds.top;
+
+  const fromWidth = bounds.width;
+  const fromHeight = bounds.height;
+
+  //   // Set transform origin to top left
+  //   gsap.set(heroImg, {
+  //     transformOrigin: "top left",
+  //   });
+
+  // Animate from position of #img-con to full section
+  gsap.from(heroImg, {
+    scrollTrigger: {
+      trigger: "#growth-sec",
+      start: "top bottom",
+      end: "top top",
+      scrub: true,
+    },
+    x: fromX,
+    y: fromY,
+    width: fromWidth,
+    height: fromHeight,
+    ease: "none",
+  });
 });
