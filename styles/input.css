@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -5,12 +6,14 @@
   --font-text: "Inter", sans-serif;
   --font-arial-black: "Arial Black", sans-serif;
 
+  --font-inter: "Inter", sans-serif;
+
   --color-primary: #1b1b1b;
 }
 
 @layer base {
   html {
-    @apply font-sans text-white;
+    @apply font-inter text-white;
   }
 
   h1,
@@ -24,6 +27,11 @@
 
   main {
     @apply ml-[210px] pr-[130px];
+  }
+
+  span,
+  li {
+    @apply font-inter;
   }
 
   section {
