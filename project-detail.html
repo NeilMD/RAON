@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="flex flex-col" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+  </head>
+  <body class="bg-primary flex flex-col mx-auto items-center w-full">
+    <div class="relative w-full">
+      <!-- SIDEBAR BEGIN -->
+      <div
+        class="sidebar w-[130px] sticky top-0 left-0 h-dvh border-r border-r-white z-10"
+      >
+        <div
+          class="flex flex-col justify-center align-middle h-full py-[5rem] px-[45px]"
+        >
+          <div class="basis-7/10">
+            <a><i class="fa-solid fa-bars fa-2x"></i></a>
+          </div>
+          <div
+            class="flex flex-col basis-3/10 justify-center align-middle gap-y-8"
+          >
+            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <!-- SIDEBAR END -->
+
+      <!-- MAIN CONTENT START -->
+      <main class="flex flex-col -mt-[100dvh]">
+        <section id="hero" class="relative h-dvh">
+          <div
+            class="w-full h-full flex flex-col items-end justify-end text-right py-40"
+          >
+            <h1 class="font-arial-black font-black text-[6rem] leading-[1.2]">
+              GOJI
+            </h1>
+            <p class="text-[1.5rem] font-semibold leading-[1.2]">
+              Unconditional Love for Femininity with No Borders
+            </p>
+            <h5 class="text-[2.7rem]">2023</h5>
+          </div>
+        </section>
+
+        <section class="relative h-dvh">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="./img/pd_s2.png"
+          />
+        </section>
+
+        <section class="mb-40">
+          <div class="flex">
+            <div class="basis-1/2 pt-60">
+              <div class="w-fit text-right">
+                <h1 class="text-[8rem] font-arial-black font-black leading-[1]">
+                  GOJI
+                </h1>
+                <span class="text-[1.5rem]">MAGAZINE</span>
+              </div>
+            </div>
+            <div
+              class="basis-1/2 text-[1.5rem] max-w-[580px] pt-56 font-extralight"
+            >
+              <p class="block">
+                GOJI Magazine is a celebration of femininity in all its
+                forms—unapologetic, boundless, and ever-evolving.
+              </p>
+              <br />
+              <p>
+                Rooted in the belief that beauty, strength, and identity
+                transcend cultures and borders, GOJI creates a space where every
+                woman’s story is seen, heard, and honored. But there was a
+                challenge—mainstream media often dictated rigid standards of
+                femininity, leaving many voices unheard. Research revealed a
+                desire for representation that was diverse, authentic, and
+                unfiltered. The industry needed a shift.
+              </p>
+              <br />
+              <p class="font-black text-[28px]">Three truths define GOJI:</p>
+              <ul class="list-disc font-black text-[28px]">
+                <li class="font-black">
+                  Femininity is fluid, powerful, and deeply personal.
+                </li>
+                <li class="font-black">
+                  Representation matters—every story deserves a platform.
+                </li>
+                <li class="font-black">
+                  Borders should never define identity, expression, or beauty.
+                </li>
+              </ul>
+              <br />
+              <p>
+                These insights led to a singular vision: Femininity, Without
+                Limits. GOJI’s visual identity embraces contrast—bold yet
+                elegant, minimal yet expressive. Inspired by the organic curves
+                of nature and the structured lines of high fashion, the logo
+                embodies both softness and strength. Typography is a balance of
+                modern sophistication and timeless grace, while a muted yet rich
+                color palette speaks to the magazine’s refined aesthetic. This
+                brand is not just about style—it’s about substance. It’s a
+                movement, a conversation, and a love letter to femininity in all
+                its complexity. Learn more at gojimag.com.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="relative h-dvh">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="./img/pd_l2.png"
+          />
+        </section>
+
+        <section class="relative h-dvh">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="./img/pd_l.png"
+          />
+        </section>
+
+        <section
+          class="relative max-h-[300px] flex justify-center items-center"
+        >
+          <span
+            class="text-[2rem] font-arial-black px-8 py-2 border border-white rounded-full"
+            >Get Started with RAON
+            <i class="fa-solid fa-arrow-right text-[2rem] ml-5"></i>
+          </span>
+        </section>
+      </main>
+    </div>
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="h-[686px] w-full flex flex-col overflow-x-hidden">
+      <div id="links" class="flex text-[2rem] mx-[129px] my-[65px]">
+        <div class="flex-1/2">
+          <ul class="flex flex-col gap-y-4">
+            <li>Services</li>
+            <li>Work</li>
+            <li>About</li>
+            <li>Join The Team</li>
+          </ul>
+        </div>
+        <div class="flex-1/2 flex justify-end">
+          <ul class="flex flex-col gap-y-4">
+            <li>Instagram</li>
+            <li>Linkedin</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <h1 class="footer-title font-stretch-ultra-condensed font-arial-black">
+          RAON AGENCY
+        </h1>
+      </div>
+      <div
+        class="border-t w-full justify-between border-t-white flex px-2 py-4 text-gray-500"
+      >
+        <div>
+          Ⓒ 2025 <a href="#" class="text-white">RAON AGENCY</a> All rights
+          reserved.
+        </div>
+        <div class="grid grid-cols-3 divide-x-2 text-end">
+          <div><a href="#" class="px-2">Contact Us</a></div>
+          <div><a href="#" class="px-2">Privacy Policy</a></div>
+          <div><a href="#" class="px-2">Cookie Policy</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER START -->
+  </body>
+</html>
